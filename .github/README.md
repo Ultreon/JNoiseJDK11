@@ -1,5 +1,12 @@
 # JNoise
 
+> [!IMPORTANT]
+> ### If you use JDK 17 or higher use [Articdive/JNoise](https://github.com/Articdive/JNoise).
+> 
+> **I ([@XyperCode](https://github.com/XyperCode)) made this fork due to the original JNoise at [Articdive/JNoise](https://github.com/Articdive/JNoise) not being supported for JDK 11.**  
+> Since so far the state in the repo, Articdive is most likely not going to downgrade to JDK 11. Downgrading was needed to support older Android devices in some of the projects in this github org.  
+> One of them being [Quantum Voxel](https://github.com/Ultreon/quantum-voxel).
+
 ![banner](banner.png)
 
 [![license](https://img.shields.io/github/license/articdive/JNoise.svg?style=for-the-badge)](../LICENSE)
@@ -273,9 +280,11 @@ public JNoiseDetailed<WorleyNoiseResult> worleyNoise=JNoise.newBuilder().worley(
 
 ## Maintainers
 
-[@Articdive](https://www.github.com/Articdive/)
+[@XyperCode](https://www.github.com/XyperCode/) (JDK 11 port)
 
 ## Acknowledgements
+
+[@Articdive](https://www.github.com/Articdive/)'s work on the original JNoise for JDK 17+
 
 [@Ken Perlin](https://mrl.nyu.edu/~perlin/)'s work on Perlin Noise.
 
