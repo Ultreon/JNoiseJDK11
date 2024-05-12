@@ -30,7 +30,8 @@ public final class GaussianWhiteNoiseGenerator implements SeededNoiseGenerator {
 
         Random random = new Random(HashUtil.hash1D(seed, iX));
 
-        return random.nextGaussian(mean, stddev);
+        // Generate Gaussian value with specified mean and stddev
+        return mean + stddev * random.nextGaussian();
     }
 
     @Override
@@ -40,7 +41,7 @@ public final class GaussianWhiteNoiseGenerator implements SeededNoiseGenerator {
 
         Random random = new Random(HashUtil.hash2D(seed, iX, iY));
 
-        return random.nextGaussian(mean, stddev);
+        return mean + stddev * random.nextGaussian();
     }
 
     @Override
@@ -51,7 +52,7 @@ public final class GaussianWhiteNoiseGenerator implements SeededNoiseGenerator {
 
         Random random = new Random(HashUtil.hash3D(seed, iX, iY, iZ));
 
-        return random.nextGaussian(mean, stddev);
+        return mean + stddev * random.nextGaussian();
     }
 
     @Override
@@ -63,7 +64,7 @@ public final class GaussianWhiteNoiseGenerator implements SeededNoiseGenerator {
 
         Random random = new Random(HashUtil.hash4D(seed, iX, iY, iZ, iW));
 
-        return random.nextGaussian(mean, stddev);
+        return mean + stddev * random.nextGaussian();
     }
 
     @Override
