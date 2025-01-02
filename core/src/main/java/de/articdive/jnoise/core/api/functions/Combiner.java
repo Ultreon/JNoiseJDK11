@@ -10,7 +10,7 @@ import de.articdive.jnoise.core.util.MathUtil;
  */
 @FunctionalInterface
 public interface Combiner {
-    Combiner ADD = Double::sum;
+    Combiner ADD = (a, b) -> a + b;
     Combiner MULTIPLY = (a, b) -> a * b;
     Combiner MAX = Math::max;
     Combiner MIN = Math::min;
