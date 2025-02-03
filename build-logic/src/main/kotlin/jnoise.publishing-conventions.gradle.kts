@@ -8,7 +8,7 @@ publishing {
         mavenLocal()
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Ultreon/JNoiswJDK11")
+            url = uri("https://maven.pkg.github.com/Ultreon/JNoiseJDK11")
             credentials {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
