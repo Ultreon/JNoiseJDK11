@@ -1,6 +1,6 @@
 allprojects {
     group = "de.articdive"
-    version = "5.0.0-SNAPSHOT"
+    version = "5.0.0" + (if (System.getenv("SNAPSHOT") == "true") "-SNAPSHOT" else "")
     description = "A Library that allows you to generate noise using different algorithms."
 }
 
